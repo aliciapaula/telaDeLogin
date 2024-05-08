@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Script JS-->
+    <script src="js/register.js" defer></script>
+    <!--Bootstrap/Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/register.css">
+    <title>Sign-Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar</h1>
+
+            <div id="msgError"></div>
+            <div id="msgSucess"></div>
+
+            <form action="/register" method="post">
+                <div class="label-float">
+                    <input name="name" type="text" id="name" placeholder=" " required>
+                    <label id="labelName" for="name">Nome</label>
+                </div>
+
+                <div class="label-float">
+                    <input name="username" type="text" id="username" placeholder=" " required>
+                    <label id="labelUsername" for="username">Usuário</label>
+                </div>
+
+                <div class="label-float">
+                    <input name="password" type="password" id="password" placeholder=" " required>
+                    <label id="labelPassword" for="password">Senha</label>
+                    <i id="showPassword" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+                <div class="label-float">
+                    <input name="confirmPassword" id="confirmPassword" placeholder=" " required>
+                    <label id="labelConfirmPassword" for="confirmPassword">Confirmar Senha</label>
+                    <i id="showConfirmPassword" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+
+                <div class="justify-center">
+                    <button id="submitButton" type="submit">Cadastrar</button>
+                </div>
+            </form>
+            <p>
+                Já possui cadastro? <a href="/login">Login</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Script JS-->
+    <script src="js/login.js" defer></script>
+    <!--Bootstrap/Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/login.css">
+    <title>Sign-In</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Login</h1>
+
+            <div id="msgError"></div>
+
+            <form action="/login" method="post">
+                <div class="label-float">
+                    <input name="username" type="text" id="username" placeholder=" " required>
+                    <label id="userLabel" for="username">Nome</label>
+                </div>
+
+                <div class="label-float">
+                    <input name="password" type="password" id="password" placeholder=" " required>
+                    <label id="passwordLabel" for="password">Senha</label>
+                    <i id="showPassword" class="fa fa-eye" aria-hidden="true"></i>
+                </div>
+
+                <div class="justify-center">
+                    <button type="submit">Entrar</button>
+                </div>
+            </form>
+            
+            <p>
+                Não tem uma conta? <a href="/register">Cadastre-se</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
