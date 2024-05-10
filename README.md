@@ -42,6 +42,6 @@ Este repositório contém um projeto de tela de login com as seguintes funcional
 
 **view/:** Contém os arquivos estáticos como HTML e EJS da página de pós o login.
 
-**server/:** Arquivo do servidor Node.js, incluindo controladores, modelos, rotas e o arquivo principal da aplicação.
+**server.js:** Arquivo do servidor Node.js, incluindo controladores, modelos, rotas e o arquivo principal da aplicação.
 
-**package-lock.json/ e package.json:**  Arquivos de informações sobre as dependências do projeto.
+**package-lock.json e package.json:**  Arquivos de informações sobre as dependências do projeto.
